@@ -1,46 +1,378 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Cristan's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+	<title>Cristan Lansang</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 <body>
-    <header>
-        <a href="#" class="logo">Logo</a>
-        <ul>
-            <li><a href="#particles-js">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </header>
-    <section class="banner" id="banner">
-        
-    <div id="particles-js"> 
-        <div class="nameintro">CRISTAN KIM XAVIER LANSANG</div>
-            
-        
-        <br>
-    </div>
-        <!-- Scripts    -->
-        <script src="particles.js"></script>
-        <script src="app.js"></script> 
-        <script type="text/javascript">
-            window.addEventListener("scroll", function(){
-                var header = document.querySelector("header");
-                header.classList.toggle("sticky", window.scrollY > 0);
-            })
-        </script>
-         <a href="#sec-1">
-            <div class="scroll-down"></div>
-        </a>
-    </section>
-    <section id="sec-1">
-        test
-    </section>
+	<!----hero Section start---->
+	
+	<nav>
+		<h2 class="logo">Portfo<span>lio</span></h2>
+		<ul>
+			<li><a href="#home">Home</a></li>
+			<li><a href="#about">About Me</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contact Me</a></li>
+		</ul>
+		
+	</nav>
 
+	<div id="home" class="hero">
+		<div class="content">
+			<h4>Hello, my name is</h4>
+			<h1>Cristan Kim Xavier</h1>
+			<h1><span> Lansang</span></h1>
+			<h3>I'm a Programmer.</h3>
+			
+			<div class="social-icons">
+				<ul>
+				  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+				  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+				  <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+				  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+				</ul>
+			</div>
+
+
+		</div>
+		
+		
+
+		<div id="particles-js">	
+		</div>
+	</div>
+	
+
+	<!----About-------->
+	<section id="about" class="about">
+		<div class="main">
+			<img src="img/main-img.jpg">
+			<div class="about-text">
+				<h2>About Me</h2>
+				<h5>Programmer, Developer  <span>Digital Artist</span> & <span>Graphic Designer</span></h5>
+				<p>
+				A 3rd-year BSIT student in Mapua University. <br>
+				An aspiring Game Developer<br>
+				Cyber Security Enthusiast<br>
+				And a Freelance Artist
+				</p>
+				
+				
+				
+			</div>
+
+		</div>
+		<hr class="one">
+		
+		<div class="box">
+			<div class="card">
+				<i class="fas fa-bars"></i>
+				<h5>Dynamic</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-user"></i>
+				<h5>Clean</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+
+			<div class="card">
+				<i class="far fa-bell"></i>
+				<h5>Growth</h5>
+				<div class="pra">
+					<p>Every website should be built with two primary goals: Firstly, it needs to work across all devices. Secondly, it needs to be fast as possible.</p>
+
+					<p style="text-align: center;">
+						<a class="button" href="#">Read More</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<hr class="one">
+
+	</section>
+
+
+	<!------Portfolio---------->
+	<section id="portfolio" class="portfolio">
+		<div class="title">
+			<h2>Portfolio</h2>
+		</div>
+		<br>
+		<br>
+		<button class="tablink" onclick="openCity('Resume', this, '#101010')" id="defaultOpen">Resume</button>
+		<button class="tablink" onclick="openCity('Skills', this, '#101010')">Skills and Tools</button>
+		<button class="tablink" onclick="openCity('Projects', this, '#101010')">Projects</button>
+		
+		<!------Resume---------->
+		<div id="Resume" class="tabcontent">	 
+				<object data="resume\resume.pdf" type="application/pdf" width="100%" height="100%">
+				<iframe src="resume\resume.pdf" width="100%" height="100%" style="border: none; padding: 10px 0px;">
+				This browser does not support PDFs. Please download the PDF to view it: 
+				<a href="resume\resume.pdf">Download PDF</a>
+				</iframe>
+				</object>
+		</div>
+		<!------Skills and Tools---------->
+		<div id="Skills" class="tabcontent">
+			
+			<div class="wrapper">
+				<!------
+				<div class="container">
+			
+					<p class="bars">HTML</p>
+					<div class="container-bars"><div class="bars-text html">90%</div></div>
+					
+					<p class="bars">CSS</p>
+					<div class="container-bars"><div class="bars-text css">80%</div></div>
+					
+					<p class="bars">JavaScript</p>
+					<div class="container-bars"><div class="bars-text js">65%</div></div>
+					
+					<p>PHP</p>
+					<div class="container-bars"><div class="bars-text php">60%</div></div>
+					
+				</div> ---------->
+				<div class="container-left">	
+					<div id="filter-button">
+						<button class="filter" onclick="filterObjects('all')">All</button>
+						<button class="filter" onclick="filterObjects('skill')">Skills</button>
+						<button class="filter" onclick="filterObjects('tool')">Tools</button>
+					</div>
+					<div class="grid">
+						<div class="gridbox tool">
+							<img class="icon" src="img\csp.png">
+							<div class="overlay">Clip Studio Paint</div>
+						</div>
+						<div class="gridbox tool">
+							<img class="icon" src="img\as.png">
+							<div class="overlay">Android Studio</div>
+						</div>
+						<div class="gridbox tool skill">
+							<img class="icon" src="img\godot.png">
+							<div class="overlay">Godot / GDScript</div>
+						</div>
+						<div class="gridbox tool">
+							<img class="icon" src="img\ms.png">
+							<div class="overlay">Microsoft Office</div>
+						</div>
+						<div class="gridbox tool">
+							<img class="icon" src="img\ps.png">
+							<div class="overlay">Photoshop</div>
+						</div>
+						<div class="gridbox tool">
+							<img class="icon" src="img\vsc.png">
+							<div class="overlay">Android Studio Code</div>
+						</div>
+						<div class="gridbox skill">
+							<img class="icon" src="img\html.png">
+							<div class="overlay">HTML</div>
+						</div>
+						<div class="gridbox skill">
+							<img class="icon" src="img\css-3.png">
+							<div class="overlay">CSS</div>
+						</div>
+						<div class="gridbox skill">
+							<img class="icon" src="img\js.png">
+							<div class="overlay">JavaScript</div>
+						</div>
+						<div class="gridbox skill">
+							<img class="icon" src="img\c-.png">
+							<div class="overlay">C++</div>
+						</div>
+						<div class="gridbox skill">
+							<img class="icon" src="img\c-sharp.png">
+							<div class="overlay">C#</div>
+						</div>
+						<div class="gridbox skill">
+							<img class="icon" src="img\python.png">
+							<div class="overlay">Python</div>
+						</div>
+						
+						<div class="gridbox skill">
+							<img class="icon" src="img\java.png">
+							<div class="overlay">JAVA</div>
+						</div>
+						<div class="gridbox skill">
+							<img class="icon" src="img\php.png">
+							<div class="overlay">PHP</div>
+						</div>
+						<div class="gridbox skill">
+							<img class="icon" src="img\json-file.png">
+							<div class="overlay">Json</div>
+						</div>
+						<div class="gridbox skill">
+							<img class="icon" src="img\mysql.png">
+							<div class="overlay">MySQL</div>
+						</div>
+						<div class="gridbox skill">
+							<img class="icon" src="img\git.png">
+							<div class="overlay">Git</div>
+						</div>
+						<div class="gridbox skill">
+							<img class="icon" src="img\docker.png">
+							<div class="overlay">Docker</div>
+						</div>
+						<div class="gridbox skill">
+							<img class="icon" src="img\xml.png">
+							<div class="overlay">XML</div>
+						</div>
+						<div class="gridbox skill">
+							<img class="icon" src="img\odoo.png">
+							<div class="overlay">Odoo</div>
+						</div>
+						<div class="gridbox skill">
+							<img class="icon" src="img\linux.png">
+							<div class="overlay">Linux</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!------Projects---------->
+		<div id="Projects" class="tabcontent">
+		
+			<div class="slider">
+				<div class="slide active">
+				  <img src="img\portfolio project.PNG" alt="">
+				  <div class="info">
+					<h2>Portfolio Website</h2>
+					<p>A simple portfolio website i made for myself</p>
+				  </div>
+				</div>
+				<div class="slide">
+				  <img src="img\spacegame.PNG" alt="">
+				  <div class="info">
+					<h2>GODOT: Space Game (Tentative Title)</h2>
+					<p>Game created using Godot and it's native language, GDscript</p>
+				  </div>
+				</div>
+				<div class="slide">
+				  <img src="img\androidapps.PNG" alt="">
+				  <div class="info">
+					<h2>Android Applications</h2>
+					<p>Applications made with Android Studio</p>
+				  </div>
+				</div>
+				<div class="slide">
+				  <img src="img\dataparcer.PNG" alt="">
+				  <div class="info">
+					<h2>Python on Jupyter Notebook: Data Parsing</h2>
+					<p>A Data parser made with Jupyter notebook</p>
+				  </div>
+				</div>
+				<div class="slide">
+				  <img src="img\contactracing.PNG" alt="">
+				  <div class="info">
+					<h2>inContact Application</h2>
+					<p>A Contact Tracing Application</p>
+				  </div>
+				</div>
+				<div class="slide">
+					<img src="img\isanitize.PNG" alt="">
+					<div class="info">
+					  <h2>iSanitize: Arduino Project</h2>
+					  <p>Integrated Disinfection Unit on IoT Doors with temperature detection Feature.</p>
+					</div>
+				  </div>
+				<div class="navigation">
+				  <i class="fas fa-chevron-left prev-btn"></i>
+				  <i class="fas fa-chevron-right next-btn"></i>
+				</div>
+				<div class="navigation-visibility">
+				  <div class="slide-icon active"></div>
+				  <div class="slide-icon"></div>
+				  <div class="slide-icon"></div>
+				  <div class="slide-icon"></div>
+				  <div class="slide-icon"></div>
+				  <div class="slide-icon"></div>
+				</div>
+			  </div>
+		
+		</div>
+		<!------Certificates
+		<div class="container2">
+			<h3>Certificates</h3>
+			
+		</div>
+		---------->
+	</section>
+
+		
+	</div>
+
+	<!------Contact Me------>
+	
+	<div id="contact" class="contact-me">
+		
+		<div class="title">
+			<h2>Contact Me</h2>
+			<br>
+	
+		</div>
+		<div class="container-left">	
+			<form onsubmit="event.preventDefault(); validateForm()" action="https://formsubmit.co/cristan.bhph@gmail.com" method="POST">
+			
+				<label for="name">Name:</label>
+				<input type="text" id="name" placeholder="Your name">
+				<small class="error"></small>
+
+				<label for="name">Email:</label>
+				<input type="text" id="email" placeholder="Your email" required>
+				<small class="error"></small>
+				
+				<label for="message">Message:</label>
+				<textarea id="message" placeholder="Your message" rows =6></textarea>
+				<small class="error"></small>
+
+				<div class="center">
+					<input type="submit" value="Send message">
+					<p id="success"> </p>
+				</div>
+			</form>
+		</div>
+	</div>
+
+	<!------Footer---------->
+	<footer>
+		<p></p>
+		<p></p>
+		
+		<p class="end">Cristan Kim Xavier Lansang @ 2022</p>
+	</footer>
+
+	<!----JS Script---->
+	
+	<script type="text/javascript" src="js/particles.min.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src="js/stickynav.js"></script>
+	<script type="text/javascript" src="js/tabs.js"></script>
+	<script type="text/javascript" src="js/filter.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
+	<script type="text/javascript" src="js/slider2.js"></script>
+	<script type="text/javascript" src="js/contact.js"></script>
+
+
+	
 </body>
 </html>
-
-     
